@@ -1,0 +1,148 @@
+/* Hero Section Styles */
+.hero {
+    background: url('../static/images/hero-bg.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 120px 20px;
+    text-align: center;
+}
+
+.hero-text h2 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    background-color: #2980b9;
+    padding: 10px 25px;
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background-color: #3498db;
+}
+
+/* About Section Styles */
+.about {
+    background-color: #ecf0f1;
+    padding: 60px 20px;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-img {
+    flex: 1;
+    max-width: 300px;
+    margin-right: 40px;
+}
+
+.about-img img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    flex: 2;
+    max-width: 600px;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    line-height: 1.6;
+}
+
+/* Skills Section Styles */
+.skills {
+    background-color: #fff;
+    padding: 60px 20px;
+}
+
+.skills h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #34495e;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.skill-item h3 {
+    font-size: 1.5rem;
+    color: #2980b9;
+    margin-bottom: 10px;
+}
+
+.skill-item p {
+    color: #7f8c8d;
+    font-size: 1rem;
+}
+
+/* Testimonial Section Styles */
+.testimonials {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #34495e;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.testimonial-card p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+}
+
+.testimonial-card p:last-child {
+    font-style: italic;
+    color: #2980b9;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-img {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+}

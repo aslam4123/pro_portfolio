@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="../static/about.css">
+<section class="about">
+    <div class="container">
+        <!-- Profile Section -->
+        <div class="profile">
+            <img src="../static/lilbaby.jpg" alt="Profile Picture" class="profile-pic">
+        </div>
+        
+        <!-- About Me Text -->
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>Hi, I'm <strong>Muhammed Aslam</strong>, a passionate web developer with a focus on building clean, user-friendly applications.</p>
+            <p>I specialize in Python, Flask, and front-end technologies such as HTML, CSS, and JavaScript to create dynamic, responsive websites. My mission is to make web experiences more accessible, efficient, and engaging.</p>
+            <p>With a strong background in problem-solving and user experience design, I aim to craft seamless digital experiences for users across different platforms.</p>
+        </div>
+        <br> <a href="../static/Muhammed_Aslam_Resume.pdf" class="resume-button" target="_blank"> View Resume</a>
+    </div>
+    <!-- <br> <a href="../static/Muhammed_Aslam_Resume.pdf" class="resume-button" target="_blank"> View Resume</a> -->
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>Python (Flask, Django)</li>
+                <li>JavaScript (React, Node.js)</li>
+                <li>HTML/CSS (Responsive Design)</li>
+                <li>Version Control (Git, GitHub)</li>
+                <li>Database Management (MySQL, MongoDB)</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects">
+        <div class="container">
+            <h2>Recent Projects</h2>
+            <div class="project-item">
+                <h3>Project Name</h3>
+                <p>A brief description of the project highlighting the key features and technologies used.</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+            <div class="project-item">
+                <h3>Project Name</h3>
+                <p>A brief description of the project highlighting the key features and technologies used.</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+        </div>
+    </section>
+     <!-- Resume Button -->
+     <!-- <a href="../static/Muhammed_Aslam_Resume.pdf" class="resume-button" target="_blank">Resume</a> -->
+    
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>If you are interested in collaborating on a project or have any questions, feel free to reach out to me:</p>
+            <ul class="contact-info">
+                <li>Email: <a href="mailto:muhmdaslam189@gmail.com">muhmdaslam189@gmail.com</a></li>
+                <li>GitHub: <a href="https://github.com/aslam4123" target="_blank">github.com/aslam4123</a></li>
+            </ul>
+            
+            <!-- Resume Button -->
+            <!-- <a href="../static/Muhammed_Aslam_Resume.pdf" class="resume-button" target="_blank">Resume</a> -->
+        </div>
+    </section>
+</section>
+
+{% endblock %}

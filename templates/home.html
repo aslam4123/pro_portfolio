@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="../static/home.css">
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-text">
+        <h2>WELCOME TO MY PORTFOLIO</h2>
+        <p>Explore my projects, skills, and experience.</p>
+        <a href="{{ url_for('projects') }}" class="btn">View Projects</a>
+    </div>
+</section>
+
+<!-- About Me Section -->
+<section class="about">
+    <div class="container about-container">
+        <div class="about-img">
+            <img src="../static/lilbaby2.jpg" alt="Profile Picture">
+        </div>
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>Hi, I'm a passionate web developer with a love for creating clean, modern, and functional websites. I specialize in front-end development, and I'm always eager to learn new technologies and improve my skills.</p>
+            <p>With a background in software engineering, I enjoy turning complex problems into simple, elegant solutions. I am highly focused on writing clean, scalable, and maintainable code.</p>
+            <p>When I'm not coding, I enjoy exploring new tech trends, contributing to open-source projects, and expanding my knowledge through courses and books.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section class="skills">
+    <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <div class="skill-item">
+                <h3>HTML</h3>
+                <p>Building accessible and structured web pages</p>
+            </div>
+            <div class="skill-item">
+                <h3>CSS</h3>
+                <p>Creating responsive, modern designs</p>
+            </div>
+            <div class="skill-item">
+                <h3>JavaScript</h3>
+                <p>Enhancing user experience with dynamic content</p>
+            </div>
+            <div class="skill-item">
+                <h3>React</h3>
+                <p>Building interactive UIs and web apps</p>
+            </div>
+            <div class="skill-item">
+                <h3>Node.js</h3>
+                <p>Building scalable backend services and APIs</p>
+            </div>
+            <div class="skill-item">
+                <h3>Python</h3>
+                <p>Developing full-stack applications and automation scripts</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+{% endblock %}
+
