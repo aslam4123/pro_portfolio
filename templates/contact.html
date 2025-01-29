@@ -1,3 +1,4 @@
+
 {% extends "base.html" %}
 
 {% block content %}
@@ -134,21 +135,22 @@
 
     <!-- Contact Form -->
     <div class="contact-form">
-        <form action="mailto:youremail@example.com" method="POST" enctype="multipart/form-data">
+        <form action="{{ url_for('contact') }}" method="POST">
             <label for="name">Your Name</label>
             <input type="text" id="name" name="name" placeholder="Your Name" required>
-
+        
             <label for="email">Your Email</label>
             <input type="email" id="email" name="email" placeholder="Your Email" required>
-
+        
             <label for="message">Your Message</label>
             <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
-
+        
             <button type="submit">Send Message</button>
         </form>
+        
     </div>
 
-    <a href="mailto:youremail@example.com" class="contact-button">Get in Touch</a>
+    <a href="mailto:muhmdaslam189@gmail.com" class="contact-button">Get in Touch</a>
 </section>
 
 {% endblock %}
