@@ -25,6 +25,10 @@ def about():
 def projects():
     return render_template('projects.html')
 
+@app.route("/thank_you")
+def thank_you():
+    return render_template("thank_you.html")
+
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
     if request.method == 'POST':
@@ -42,7 +46,7 @@ def contact():
         # Send the email
         try:
             mail.send(msg)
-            return redirect(url_for('contact'))
+            return redirect(url_for('thank_you'))
         except Exception as e:
             print(f"Error sending email: {e}")
             return "There was an issue sending your message. Please try again."
